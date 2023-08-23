@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public PlayerSO PlayerData => PlayerData;
-    [SerializeField] PlayerSO playerData;
+    public PlayerSO Data => _playerData;
+    [SerializeField] PlayerSO _playerData;
 }

@@ -7,4 +7,5 @@ public class PlayerSO : ScriptableObject
     public float JumpPower => _jumpPower;
     [SerializeField] float _jumpPower;
 
+    public PlayerEvents Events;
 }
