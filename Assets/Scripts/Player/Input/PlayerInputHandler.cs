@@ -1,23 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : PlayerBase
 {
-    private PlayerInputs _input;
+    private BasicInput _input;
     protected override void Awake(){
         base.Awake();
-        _input = new PlayerInputs();
+        _input = new BasicInput();
     }
     private void OnEnable(){
         _input.Enable();
-        _input.Player.Tap.performed += OnTap;
+        _input.Player.Jump.performed += OnTap;
     }
     private void OnDisable(){
-        _input.Player.Tap.performed -= OnTap;
         _input.Disable();
+        _input.Player.Jump.performed -= OnTap;
     }
-    private void OnTap(InputAction.CallbackContext value){
+    public void OnTap(InputAction.CallbackContext value){
         player.Data.Events.OnTap?.Invoke();
     }
+   
 }

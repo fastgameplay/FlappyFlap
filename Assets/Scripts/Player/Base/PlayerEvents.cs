@@ -1,9 +1,8 @@
 using System;
 using UnityEngine;
 
-public class PlayerEvents : MonoBehaviour
+public struct PlayerEvents
 {
-   
     public Action OnTap;
 
     public Action OnScoreIncrement;
