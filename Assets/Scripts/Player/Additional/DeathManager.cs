@@ -26,7 +26,7 @@ public class DeathManager : PlayerBase
     }
 
     public void ReloadCurrentScene(){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     void OnEnable(){

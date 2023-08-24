@@ -7,8 +7,10 @@ public class DataShow : MonoBehaviour, IAppsFlyerConversionData
 {
     void Start()
     {
-        AppsFlyer.initSDK("ZLigGqGzDdxGMT7QBPjsMG", "com.testtask.flappybird", this);
+        AppsFlyer.initSDK("ZLigGqGzDdxGMT7QBPjsMG", null, this);
         AppsFlyer.startSDK();
+        	
+        AppsFlyer.getConversionData(gameObject.name);   
     }
 
     public void onConversionDataSuccess(string conversionData)
@@ -21,7 +23,6 @@ public class DataShow : MonoBehaviour, IAppsFlyerConversionData
     public void onConversionDataFail(string error)
     {
         AppsFlyer.AFLog("onConversionDataFail", error);
-        Debug.Log("Erroe = ");
 
     }
 
@@ -29,13 +30,11 @@ public class DataShow : MonoBehaviour, IAppsFlyerConversionData
     {
         AppsFlyer.AFLog("onAppOpenAttribution", attributionData);
         Dictionary<string, object> attributionDataDictionary = AppsFlyer.CallbackStringToDictionary(attributionData);
-        Debug.Log("Erroe s ");
 
     }
 
     public void onAppOpenAttributionFailure(string error)
     {
         AppsFlyer.AFLog("onAppOpenAttributionFailure", error);
-        Debug.Log("Erroe g ");
     }
 }
