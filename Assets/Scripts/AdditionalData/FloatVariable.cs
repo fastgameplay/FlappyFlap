@@ -7,7 +7,7 @@ public class FloatVariable : ScriptableObject
     public float Value{
         get => _value;
         set {
-            _value = Mathf.Clamp01(value);
+            _value = value;
         }
     }
     [SerializeField] float _value;

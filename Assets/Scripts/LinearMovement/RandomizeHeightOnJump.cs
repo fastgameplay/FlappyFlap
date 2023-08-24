@@ -5,9 +5,12 @@ using UnityEngine;
 public class RandomizeHeightOnJump : MonoBehaviour
 {
     [SerializeField] Vector2 _jumpRange;
+    [SerializeField] bool _randomAtStart;
     LinearMovement _linearMovement;
+
     void Awake(){
         _linearMovement = GetComponent<LinearMovement>();
+        if(_randomAtStart) OnJump();
     }
     void OnEnable(){
         _linearMovement.OnJumpPerformed += OnJump;
