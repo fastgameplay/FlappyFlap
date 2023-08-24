@@ -286,6 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 330675749}
   - component: {fileID: 330675750}
+  - component: {fileID: 330675751}
   m_Layer: 0
   m_Name: PipeBundle (0)
   m_TagString: Untagged
@@ -324,6 +325,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 4bf1505759bf0f34baeebd91df549028, type: 2}
+--- !u!114 &330675751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330675748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d72f3566786b2418b005b3fa538020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpRange: {x: -2.2, y: 2.2}
 --- !u!1 &362837130
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467804162}
   - component: {fileID: 467804163}
+  - component: {fileID: 467804164}
   m_Layer: 0
   m_Name: PipeBundle (1)
   m_TagString: Untagged
@@ -547,6 +562,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 4bf1505759bf0f34baeebd91df549028, type: 2}
+--- !u!114 &467804164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467804161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d72f3566786b2418b005b3fa538020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpRange: {x: -2.2, y: 2.2}
 --- !u!1 &484175519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,6 +2886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1866702835}
   - component: {fileID: 1866702836}
+  - component: {fileID: 1866702837}
   m_Layer: 0
   m_Name: PipeBundle (3)
   m_TagString: Untagged
@@ -2896,6 +2925,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 4bf1505759bf0f34baeebd91df549028, type: 2}
+--- !u!114 &1866702837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866702834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d72f3566786b2418b005b3fa538020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpRange: {x: -2.2, y: 2.2}
 --- !u!1 &1871994617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2906,6 +2948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871994618}
   - component: {fileID: 1871994619}
+  - component: {fileID: 1871994620}
   m_Layer: 0
   m_Name: PipeBundle (2)
   m_TagString: Untagged
@@ -2944,6 +2987,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 4bf1505759bf0f34baeebd91df549028, type: 2}
+--- !u!114 &1871994620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871994617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d72f3566786b2418b005b3fa538020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpRange: {x: -2.2, y: 2.2}
 --- !u!1 &1879647676
 GameObject:
   m_ObjectHideFlags: 0
